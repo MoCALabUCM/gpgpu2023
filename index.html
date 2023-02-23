@@ -52,11 +52,11 @@
 							<!-- <p>April 3, 2022, Online</p>   -->
 							<p>Feb 25 Full Day, 2023, Montreal, Canada</p>
 
-							<!-- <p>Zoom Link: <a
-									href="https://acm-org.zoom.us/j/96884634475?pwd=d1hCeFc1VFhOMnNjZnk4Z05UQ0ZwZz09">https://acm-org.zoom.us/j/96884634475?pwd=d1hCeFc1VFhOMnNjZnk4Z05UQ0ZwZz09</a>
-							</p> -->
+							<p>Zoom Link: <a
+									href="https://ucmerced.zoom.us/j/83338827843?pwd=SlN1UkNNNmpuaEVBWURGSG5wSllSdz09">https://ucmerced.zoom.us/j/83338827843?pwd=SlN1UkNNNmpuaEVBWURGSG5wSllSdz09</a>
+							</p> 
 							<!-- <p>Zoom Link: <a href="TBD"></a>TBD
-							</p> -->
+							</p>
 
 						</header>
 						<p class="rmargin" align="justify">
@@ -172,44 +172,16 @@
 											Abstract
 										</div>
 										<div class="collapse-content abstract-content" style="display:none">
-											<!-- <p>Emerging advanced applications,
-												such as deep learning and
-												graphprocessing, with enormous
-												processing demand and massive
-												mem-ory requests call for a
-												comprehensive processing system
-												or ad-vanced solutions to
-												address these requirements.
-												Near data process-ing is one of
-												the promising structures
-												targeting this goal.
-												However,most recent studies
-												have focused on processing
-												instructions nearthe main
-												memory data banks while
-												ignoring the benefits of
-												pro-cessing instructions near
-												other memory hierarchy levels
-												such as LLC. In this study, we
-												investigate the near LLC
-												processing struc-tures, and
-												compare it to the near main
-												memory processing alter-native,
-												specifically in graphical
-												processing units. We analyze
-												thesetwo structures on various
-												applications in terms of
-												performance andpower. Results
-												show a clear benefit of near
-												LLC processing overnear main
-												memory processing in a class of
-												applications. Further,we
-												suggest a structure, which
-												could benefit from both
-												structures,requiring the
-												applications to be
-												characterized in advance or at
-												runtime.</p> -->
+											<p> SYCL is a promising programming model for heterogenous computing
+												across vendors’ devices. In this paper, we study whether
+												SYCL can be applied to an automotive workload and its portability
+												on heterogeneous computing platforms. We explain the automotive
+												benchmark, describe our implementations and optimizations of the
+												benchmark, and evaluate the performance of the benchmarks using
+												SYCL and other programming models on heterogeneous devices.
+												The study also allows us to have a better understanding of portability
+												of the benchmark across these platforms.
+											</p>
 										</div>
 									</div>
 				
@@ -229,25 +201,7 @@
 											Abstract
 										</div>
 										<div class="collapse-content abstract-content" style="display:none">
-											<!-- <p>When running single-GPU
-												applications on multi-GPU
-												compute nodes, the remaining
-												GPU devices are kept idle. We
-												propose a novel technology to
-												accelerate these single-GPU
-												applications using the idle GPU
-												devices. The data transfers
-												between host and device are
-												performed not only by the first
-												GPU but also by the second GPU
-												as well as the alternative
-												route with PCI-Express and
-												NV-Link connected to it. Our
-												performance evaluations show
-												the proposed method enables
-												about twice data transfer speed
-												as native single GPU case for
-												large data sizes.</p> -->
+											<p>An auto-tuning framework for GPU devices is presented for tuning OpenCL application kernels. The GPU tuner employs multi-objective optimization methodology to improve the performance and power consumption of applications. The proposed approach explores a user defined solution space efficiently comprising of possible tunable algorithmic with the hardware counter variations through code transformations. The methodology targets GPU code tuning situations where performance and energy consumption are critical and an optimal trade-off between performance and energy is unavoidable. The proposed framework, MOKAT is evaluated for 2D Convolution kernel targeting NVIDIA Tesla GPU. Various hardware counter and algorithmic variations such as loop unrolling, caching, workgroup size and memory utilization are employed for evaluation. MOKAT utilizes a non-dominated Genetic Algorithm (GA) with hardware power sensor data for application code transformation through code rewrite and validation. The proposed technique is applicable to both off-line and in-loop tuning of kernels. The final Pareto optimal configuration code utilized around 30% less power and 4% faster execution time. The analysis on the first and last GA generation shows the convergence of optimization, and standard deviation is improved by 45%.</p>
 										</div>
 									</div>
 								</td>
@@ -267,6 +221,11 @@
 											Abstract
 										</div>
 										<div class="collapse-content abstract-content" style="display:none">
+											<p>
+												The emerging new applications, such as data mining and graph analysis, demand extra processing power at the hardware level. Conventional static task scheduling is no longer able to meet the requirements of such complicated applications. This inefficiency is a major concern when the application is supposed to run on a Graph-
+ics Processing Unit (GPU), where millions of instructions should be distributed among a limited number of processing cores. A non-optimal scheduling strategy leads to unfair load distribution among the GPU’s processing cores. Consequently, while busy cores are stalled due to the lack of resources, waiting for their data from the main memory, other cores are idle, waiting for busy cores to complete their tasks. This leads to a significant number of stall and idle cycles, limiting the GPU performance to a large extent. Our study introduces LATOA, a Load-Aware Task Offloading and Adoption method that tackles this problem by reducing both stall and idle cycles. LATOA is the first study moving from static to dynamic task scheduling based on run-time information obtained from the Miss Status Holding Register (MSHR) tables. In LATOA, all processing cores are dynamically tagged with critical, neutral,
+or relaxed states. Then, irregular warps with low locality properties are detected and offloaded from critical cores (going to the stall state) to relaxed ones (going to the idle state). Based on our experiments, LATOA reduces the number of stall cycles on average by 24% and increases the neutral states on average by 38%. In addition, with negligible hardware overhead, LATOA improves system performance and power efficiency on average by 26% and 7%, respectively.
+											</p>
 										</div>
 									</div>
 								</td>
@@ -337,25 +296,37 @@
 											Abstract
 										</div>
 										<div class="collapse-content abstract-content" style="display:none">
-											<!-- <p>When running single-GPU
-												applications on multi-GPU
-												compute nodes, the remaining
-												GPU devices are kept idle. We
-												propose a novel technology to
-												accelerate these single-GPU
-												applications using the idle GPU
-												devices. The data transfers
-												between host and device are
-												performed not only by the first
-												GPU but also by the second GPU
-												as well as the alternative
-												route with PCI-Express and
-												NV-Link connected to it. Our
-												performance evaluations show
-												the proposed method enables
-												about twice data transfer speed
-												as native single GPU case for
-												large data sizes.</p> -->
+											<p>
+												GPU architectures have become popular for executing general-purpose programs which rely on having a large number of threads that run concurrently to hide the latency among dependent instructions. This approach has an important cost/overhead in terms of low data locality due to the increased pressure on the memory hierarchy of the many threads being run concurrently and the extra cost of storing and managing the on-chip state of those many threads.
+This paper presents SOCGPU (Simple Out-of-order Core for GPU), a simple out-of-order execution mechanism that does not require register renaming nor scoreboards. It uses a small Instruction Buffer and a tiny Dependence matrix to keep track of dependencies among instructions and avoid data hazards. Evaluations for an Nvidia Tesla V100-like GPU show that SOCGPU provides a speed-up of up to 2.3 in some machine learning programs and 1.38 on average for a variety of benchmarks, while it reduces energy consumption by 6.5%, with only 2.4% area overhead.
+											</p>
+										</div>
+									</div>
+								</td>
+							</tr>
+			
+							
+							<tr style="border-bottom: 1px solid #000;">
+								<td class="tg-fymr"><span style="font-weight:bold">12:00 PM - 1:20 PM</span></td>
+								<td class="tg-0pky">Lunch</td>
+							</tr>
+
+							<tr style="border-bottom: 1px solid #000;">
+								<td class="tg-fymr"><span style="font-weight:bold">1:20 PM - 2:20 PM</span></td>
+								<td class="tg-0pky"><span style="font-weight:bold">[Keynote II] </span>
+									<span style="font-style:italic"> On-Chip GPU Bandwidth Confusion </span> <br>John Kim, KAIST
+									<br>
+									<div class="abstract collapse">
+										<div class="collapse-opener">
+											<span class="collapse-arrow">
+												▶
+											</span>
+											Abstract
+										</div>
+										<div class="collapse-content abstract-content" style="display:none">
+											<p>
+												It is well-known that memory bandwidth is a critical resource in modern GPUs and can be the bottleneck for many workloads. However, high on-chip communication bandwidth is also necessary to ensure that off-chip bandwidth is not bottlenecked by on-chip bandwidth. In this talk, I will explore the challenges of bandwidth challenges internal to the GPU including the on-chip interconnect. In particular, I will re-visit the design of GPU NoC and how bandwidth hierarchy needs to be properly considered to avoid bandwidth bottlenecks in a GPU.  The two important characteristics of on-chip communication are bandwidth and latency; I will describe the unique on-chip bandwidth and latency characteristics and their implication on overall performance. In addition, I will describe how high-bandwidth on-chip bandwidth can be exploited for high-bandwidth side-channel attacks.
+											</p>
 										</div>
 									</div>
 								</td>
@@ -368,7 +339,7 @@
 							</tr> -->
 
 							<tr style="border-bottom: 1px solid #000;">
-								<td class="tg-fymr"><span style="font-weight:bold">3:00 PM - 3:20 PM</span></td>
+								<td class="tg-fymr"><span style="font-weight:bold">2:20 PM - 2:50 PM</span></td>
 								<td class="tg-0pky"><span style="font-weight:bold">[Regular Paper]</span>
 									<span style="font-style:italic">   Lightweight Register File Caching in Collector Units for GPUs </span>
 									<br>Mojtaba Abaie Shoushtary, Jose Maria Arnau, Jordi Tubella Murgadas and Antonio Gonzalez (Polytechnic University of Catalonia)</br>
@@ -380,55 +351,21 @@
 											Abstract
 										</div>
 										<div class="collapse-content abstract-content" style="display:none">
-											<!-- <p>High-level code generators like
-												Halide, Lift, and RISE make a
-												compelling proposition: write
-												programs in a simple high-level
-												language and get
-												high-performing GPU code “for
-												free”. They achieve this feat
-												by restricting the input
-												language to a specific domain
-												(such as image and array
-												processing in Halide) or to a
-												fixed set of flexible parallel
-												patterns (as Lift and RISE do).
-												Implementing high-level code
-												generators that produce
-												high-performance code is
-												challenging, specifically as
-												the target hardware constantly
-												evolves.
-												In this paper, we discuss how
-												we systematically extend the
-												RISE high-level code generator
-												with support for tensor cores,
-												a specialized hardware feature
-												of recent Nvidia GPUs. We
-												highlight the design of RISE
-												that makes it easily extensible
-												by following a systematic
-												bottom-up approach, that first,
-												exposes the imperative tensor
-												core API to the code generator,
-												then, raises the abstractions
-												to an internal low-level
-												functional representation,
-												that, finally, is targeted by a
-												rewrite process that starts
-												from a high-level functional
-												program.
-												Our experimental evaluation
-												shows that RISE with support
-												for tensor cores generates code
-												of competitive performance to
-												manually optimized CUDA code,
-												which is only up to 36%, but on
-												average only 10%, slower than
-												Nvidia’s highly optimized
-												cuBLAS library, and clearly
-												outperforms any code that does
-												not exploit tensor cores. </p> -->
+											<p>
+												Modern GPUs benefit from a sizable Register File (RF) to provide
+fine-grained thread switching. As the RF is huge and accessed
+frequently, it consumes a considerable share of the dynamic energy
+of the GPU. Designing a large, high-throughput RF with low energy
+consumption and area for GPUs is challenging.
+In this paper, an energy-efficient hierarchical RF design for GPUs,
+called Malekeh, is introduced. Malekeh keeps registers in energy-
+efficient small caches and maximizes cache efficacy by using light-
+weight policies and supporting adaptive algorithms. The policies’
+effectiveness is improved by leveraging register reuse distance in-
+formation provided by the compiler as a hint. Malekeh reduces the
+RF reads by 48.5% and dynamic energy by 29.1%. It also improves
+performance by 9.6% with a negligible overhead of 0.04% in area.
+											</p>
 										</div>
 									</div>
 								</td>
@@ -452,6 +389,9 @@
 											Abstract
 										</div>
 										<div class="collapse-content abstract-content" style="display:none">
+											<p>
+												General Purpose Graphics Processing Units (GPGPU) power most of the top systems in HPC. The total capacity of scratchpad memory has increased by more than $20$x in the last decade. However, existing optimizations for stencil computations using temporal blocking have yet to aggressively exploit the large capacity of scratchpad memory. This work uses the 2D Jacobian 5-point iterative stencil as a case for studying the utilization of the large scratchpad memory. Unlike the existing research that tile the domain in a thread block fashion, we tile the domain so that every single tile is large enough to employ all the available scratchpad memory in the GPU. Hence, we process several time steps inside a single tile before offloading the result back to global memory. The evaluated result shows our performance is comparable to state-of-the-art implementations, yet our implementation is much simpler, and does not need auto-generation of code.
+											</p>
 										</div>
 									</div>
 								</td>
