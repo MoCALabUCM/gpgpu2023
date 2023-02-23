@@ -309,32 +309,6 @@ This paper presents SOCGPU (Simple Out-of-order Core for GPU), a simple out-of-o
 							</tr>
 			
 							
-							<tr style="border-bottom: 1px solid #000;">
-								<td class="tg-fymr"><span style="font-weight:bold">12:00 PM - 1:20 PM</span></td>
-								<td class="tg-0pky">Lunch</td>
-							</tr>
-
-							<tr style="border-bottom: 1px solid #000;">
-								<td class="tg-fymr"><span style="font-weight:bold">1:20 PM - 2:20 PM</span></td>
-								<td class="tg-0pky"><span style="font-weight:bold">[Keynote II] </span>
-									<span style="font-style:italic"> On-Chip GPU Bandwidth Confusion </span> <br>John Kim, KAIST
-									<br>
-									<div class="abstract collapse">
-										<div class="collapse-opener">
-											<span class="collapse-arrow">
-												▶
-											</span>
-											Abstract
-										</div>
-										<div class="collapse-content abstract-content" style="display:none">
-											<p>
-												It is well-known that memory bandwidth is a critical resource in modern GPUs and can be the bottleneck for many workloads. However, high on-chip communication bandwidth is also necessary to ensure that off-chip bandwidth is not bottlenecked by on-chip bandwidth. In this talk, I will explore the challenges of bandwidth challenges internal to the GPU including the on-chip interconnect. In particular, I will re-visit the design of GPU NoC and how bandwidth hierarchy needs to be properly considered to avoid bandwidth bottlenecks in a GPU.  The two important characteristics of on-chip communication are bandwidth and latency; I will describe the unique on-chip bandwidth and latency characteristics and their implication on overall performance. In addition, I will describe how high-bandwidth on-chip bandwidth can be exploited for high-bandwidth side-channel attacks.
-											</p>
-										</div>
-									</div>
-								</td>
-							</tr>
-
 							<!-- <tr style="border-bottom: 1px solid #000;">
 								<td class="tg-fymr" style="font-weight:bold">
 									Session 2</td>
@@ -342,7 +316,7 @@ This paper presents SOCGPU (Simple Out-of-order Core for GPU), a simple out-of-o
 							</tr> -->
 
 							<tr style="border-bottom: 1px solid #000;">
-								<td class="tg-fymr"><span style="font-weight:bold">2:20 PM - 2:50 PM</span></td>
+								<td class="tg-fymr"><span style="font-weight:bold">3:00 PM - 3:20 PM</span></td>
 								<td class="tg-0pky"><span style="font-weight:bold">[Regular Paper]</span>
 									<span style="font-style:italic">   Lightweight Register File Caching in Collector Units for GPUs </span>
 									<br>Mojtaba Abaie Shoushtary, Jose Maria Arnau, Jordi Tubella Murgadas and Antonio Gonzalez (Polytechnic University of Catalonia)</br>
@@ -413,55 +387,9 @@ performance by 9.6% with a negligible overhead of 0.04% in area.
 											Abstract
 										</div>
 										<div class="collapse-content abstract-content" style="display:none">
-											<!-- <p>High-level code generators like
-												Halide, Lift, and RISE make a
-												compelling proposition: write
-												programs in a simple high-level
-												language and get
-												high-performing GPU code “for
-												free”. They achieve this feat
-												by restricting the input
-												language to a specific domain
-												(such as image and array
-												processing in Halide) or to a
-												fixed set of flexible parallel
-												patterns (as Lift and RISE do).
-												Implementing high-level code
-												generators that produce
-												high-performance code is
-												challenging, specifically as
-												the target hardware constantly
-												evolves.
-												In this paper, we discuss how
-												we systematically extend the
-												RISE high-level code generator
-												with support for tensor cores,
-												a specialized hardware feature
-												of recent Nvidia GPUs. We
-												highlight the design of RISE
-												that makes it easily extensible
-												by following a systematic
-												bottom-up approach, that first,
-												exposes the imperative tensor
-												core API to the code generator,
-												then, raises the abstractions
-												to an internal low-level
-												functional representation,
-												that, finally, is targeted by a
-												rewrite process that starts
-												from a high-level functional
-												program.
-												Our experimental evaluation
-												shows that RISE with support
-												for tensor cores generates code
-												of competitive performance to
-												manually optimized CUDA code,
-												which is only up to 36%, but on
-												average only 10%, slower than
-												Nvidia’s highly optimized
-												cuBLAS library, and clearly
-												outperforms any code that does
-												not exploit tensor cores. </p> -->
+											<p>
+												Multi-GPU systems are considered as one of the most promising scalable accelerator systems. There have been several studies that tackled communication and scheduling efficiencies with a small-scale multi-GPU system (mostly with four GPU modules). In this paper, we examine scalability by increasing the number of GPUs. Our observations show that multi-GPU systems are yet to be scalable, mainly due to Non-Uniform Memory Access (NUMA) effects; furthermore, the state-of-the-art aggressive page distribution is one of the main reasons that increase slow remote accesses.
+											</p>
 										</div>
 									</div>
 								</td>
